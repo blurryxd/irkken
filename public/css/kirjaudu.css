@@ -1,0 +1,168 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin:0;
+    padding:0;
+    background: linear-gradient(royalblue, white);
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    padding: 30px;
+}
+.container {
+    margin: 10px auto;
+    width: 400px;
+    max-width: 100%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: solid 1px #d2d2d2;
+    box-shadow: 5px 5px 10px #d2d2d2;
+}
+.container:hover {
+    box-shadow: 5px 5px 5px #d2d2d2;
+}
+.log-in {
+    width: 50%;
+    height: 70px;
+    border: solid 2px #9e2021;
+    text-align: center;
+}
+.sign-up:hover, .log-in:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+.log-in-header {
+    margin-top: 23px;
+}
+.sign-up {
+    width: 50%;
+    height: 70px;
+    border: solid 2px #9e2021;
+    margin-top: -70px;
+    margin-left: 178px;
+}
+.sign-up-header {
+    margin-top: 23px;
+    text-align: center;
+}
+.active {
+    background-color: #9e2021;
+    color: #fff;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    border: solid 1px #9e2021;
+    margin-top: 10px;
+    font-family: inherit;
+}
+.first-name, .last-name {
+    width: 100%;
+    margin-top: -5px;
+}
+.last-name {
+    margin-right: 0;
+}
+::placeholder {
+    font-style: italic;
+}
+.email {
+    margin-top: -5px;
+}
+button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px;
+    border: solid 2px #9e2021;
+    background-color: #9e2021;
+    color: #fff;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+button:hover {
+    box-shadow: 5px 5px 10px #d2d2d2;
+    cursor: pointer;
+}
+.nappi{
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px;
+    border: solid 2px #9e2021;
+    background-color: #9e2021;
+    color: #fff;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+.nappi:hover{
+    box-shadow: 5px 5px 10px #d2d2d2;
+    cursor: pointer;
+}
+
+#sign-up-form {
+    display: none;
+}
+#log-in-form {
+    display: block;
+}
+.password {
+    float: right;
+    font-style: italic;
+    margin-top: 9px
+}
+.password:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+:focus {
+    outline-color: orange;
+}
+
+
+img{
+    text-shadow: 3px 2px blue;
+    font-size: 50px;
+    left:45.5%;
+    margin-top:10%;
+    position:relative;
+}
+
+@media only screen and (min-width : 481px) and (max-width : 559px) {
+    img{
+        left:37%;
+    }
+}
+
+@media only screen and (min-width : 285px) and (max-width : 447px) {
+    img{
+        left:30%;
+    }
+}
+
+@media only screen and (min-width : 285px) and (max-width : 626px) {
+    img{
+        left:27%;
+    }
+}
+
+.alku img{
+    margin-left: 50px;
+
+}
+

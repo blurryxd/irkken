@@ -1,0 +1,118 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<h3>Login</h3>
+<form action="login" method="post">
+    <input type="text" name="username" placeholder="username">
+    <input type="password" name="password" placeholder="password">
+    <input type="submit" value="Login">
+</form>
+<h3>Register</h3>
+<form action="register" method="post">
+    <input type="text" name="username" placeholder="username">
+    <input type="password" name="password" placeholder="password">
+    <input type="submit" value="register">
+</form>
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IRKKEN LOGIN</title>
+    <LINK href="css/kirjaudu.css" rel="stylesheet">
+</head>
+<body>
+<div class="fadeIn first">
+    <img src="img/irkken final no background.png" height="200" width="200"/>
+</div>
+
+<div class="container">
+    <div class="log-in active" id="log-in-button">
+        <p class="log-in-header">Log In</p>
+    </div>
+
+    <div class="sign-up" id="sign-up-button">
+        <p class="sign-up-header">Sign Up</p>
+    </div>
+
+
+    <form id="sign-up-form" action="register" method="post">
+        <div class="header">
+            <h1>Sign Up for Free</h1>
+        </div>
+        <input class="first-name" name="username" type="text" placeholder="username" required>
+        <input type="password" name="password" placeholder="password" required>
+        <input type="submit" class="nappi" value="register">
+    </form>
+    <form id="log-in-form" action="login" method="post">
+        <div class="header">
+            <h1>Welcome back!</h1>
+        </div>
+        <input class="email" name="username" type="text" placeholder="käyttäjä*" required>
+        <input type="password" name="password" placeholder="password*" required>
+        <input type="submit" class="nappi" value="Login">
+    </form>
+
+</div>
+
+
+
+
+
+
+
+
+<!--<div class="container">
+    <div class="sign-up active" id="sign-up-button">
+        <p class="sign-up-header">Sign Up</p>
+    </div>
+
+    <div class="log-in" id="log-in-button">
+        <p class="log-in-header">Log In</p>
+    </div>
+    <form id="sign-up-form" action="register" method="post">
+        <div class="header">
+            <h1>Sign Up for Free</h1>
+        </div>
+        <input class="first-name" name="username" type="text" placeholder="username" required>
+        <input type="password" name="password" placeholder="password" required>
+        <input type="submit" class="nappi" value="register">
+    </form>
+    <form id="log-in-form" action="login" method="post">
+        <div class="header">
+            <h1>Welcome back!</h1>
+        </div>
+        <input class="email" name="username" type="text" placeholder="käyttäjä*" required>
+        <input type="password" name="password" placeholder="password*" required>
+        <input type="submit" class="nappi" value="Login">
+    </form>
+
+</div>-->
+
+<script>
+  'use strict';
+  document.querySelector('#log-in-button').addEventListener('click', function() {
+    document.querySelector('#log-in-button').classList.add('active');
+    document.querySelector('#sign-up-button').classList.remove('active');
+    document.querySelector('#sign-up-form').style.display= 'none';
+    document.querySelector('#log-in-form').style.display= 'block';
+  });
+
+  document.querySelector('#sign-up-button').addEventListener('click', function() {
+    document.querySelector('#log-in-button').classList.remove('active');
+    document.querySelector('#sign-up-button').classList.add('active');
+    document.querySelector('#sign-up-form').style.display= 'block';
+    document.querySelector('#log-in-form').style.display= 'none';
+  });
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>IRKKEN IMAGE UPLOAD</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="modules/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<div class="container">
+    <nav class="row">
+        <img id="irkken" src="img/irkken final no background.png" height="200" width="200"/>
+
+            <h1 id="loggaus"><a href="./logout" class="button">Logout</a></h1>
+
+        <div id="categories">
+
+
+
+        </div>
+
+        <div id="formi">
+            <button id="reset-button">Reset</button>
+            <form action="/upload" method="post" enctype="multipart/form-data" id="mediaform">
+                <input type="text" name="category" placeholder="Category">
+                <br>
+                <input type="text" name="title" placeholder="Title">
+                <br>
+                <input type="text" name="details" placeholder="Details">
+                <br>
+                <label>Kuva
+                    <input type="file" name="mediafile" accept="image/*">
+                </label>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+
+            <img id="kuva">
+        </div>
+    </>
+    <main>
+        <div id="content">
+            <ul>
+
+            </ul>
+        </div>
+
+    </main>
+</div>
+
+<!--
+<div id="contactform">
+    <form action="/upload" method="post" enctype="multipart/form-data" id="mediaform">
+        <p class="left">
+            <label for="first_name">first name</label>
+
+
+
+        </p>
+        <input type="text" name="first_name" placeholder="John" />
+
+        <li>
+            <label for="comments">comments</label>
+
+
+        </li>
+        <textarea cols="46" rows="3" name="comments" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+
+</div>
+-->
+<div class="modal hidden">
+    <button>&times;</button>
+    <h4>Map</h4>
+
+    <figure>
+
+        <img src="" alt="">
+        <div class="kommentit">
+            <ul id="comments"></ul>
+
+
+        </div>
+
+        <div id="map" class="small-map"></div>
+        <br>
+        <div id="hidden"></div>
+        <form id="kommenttiformi" action="comment" method="post">
+            <input type="text" name="kommentti" placeholder="Kommentoi">
+            <button type="submit">Comments</button>
+        </form>
+    </figure>
+</div><!-- /.modal -->
+
+
+
+
+<script src="modules/moment/moment.js"></script>
+<script src="modules/leaflet/dist/leaflet.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
